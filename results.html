@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Memo for Christine [UNEDITED - NOT FOR PUBLICATION]</title>
   <script>
-    if (prompt('Password:') !== 'christine') {
-      document.documentElement.innerHTML = '<p style="font-family:sans-serif;padding:40px;color:#666;">Incorrect password.</p>';
-    }
+    var authed = prompt('Password:') === 'christine';
+    document.addEventListener('DOMContentLoaded', function() {
+      if (authed) {
+        document.body.style.display = 'block';
+      } else {
+        document.body.innerHTML = '<p style="font-family:sans-serif;padding:40px;color:#666;">Incorrect password.</p>';
+        document.body.style.display = 'block';
+      }
+    });
   </script>
   <style>
-    body { font-family: Georgia, serif; max-width: 960px; margin: 40px auto; padding: 0 24px; color: #222; background: #fafaf8; }
+    body { display: none; font-family: Georgia, serif; max-width: 960px; margin: 40px auto; padding: 0 24px; color: #222; background: #fafaf8; }
     h1 { font-size: 2rem; margin-bottom: 4px; }
     .disclaimer { font-size: 0.85rem; color: #666; border-left: 3px solid #ccc; padding-left: 12px; margin: 12px 0 16px; }
     .disclaimer-warning { font-size: 0.85rem; color: #c0392b; border-left: 3px solid #e74c3c; background: #fff5f5; padding: 10px 12px; margin: 24px 0 0; border-radius: 0 4px 4px 0; }
