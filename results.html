@@ -13,12 +13,14 @@
     .chart { margin-bottom: 8px; }
     .chart h3 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin: 0 0 6px; }
     .chart img { width: 100%; border: 1px solid #e0e0e0; border-radius: 4px; }
-    details { margin-top: 20px; }
-    summary { cursor: pointer; font-size: 0.9rem; color: #555; padding: 8px 12px; background: #f0ede8; border-radius: 4px; list-style: none; display: flex; align-items: center; gap: 6px; }
+    details { margin-top: 24px; border: 2px dashed #bbb; border-radius: 6px; padding: 0; }
+    summary { cursor: pointer; font-size: 1rem; font-weight: bold; color: #333; padding: 14px 18px; background: #ede9e2; border-radius: 4px; list-style: none; display: flex; align-items: center; gap: 8px; user-select: none; }
+    summary:hover { background: #e0dbd2; }
     summary::-webkit-details-marker { display: none; }
-    summary::before { content: "▶"; font-size: 0.7rem; transition: transform 0.2s; }
+    summary::before { content: "▶"; font-size: 0.75rem; transition: transform 0.2s; }
     details[open] summary::before { transform: rotate(90deg); }
-    .detail-charts { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 16px; }
+    details[open] summary { border-radius: 4px 4px 0 0; border-bottom: 2px dashed #bbb; }
+    .detail-charts { display: grid; grid-template-columns: 1fr; gap: 20px; padding: 20px; }
     hr { border: none; border-top: 1px solid #e0e0e0; margin: 56px 0 0; }
   </style>
 </head>
@@ -43,7 +45,7 @@
     <img src="musicbrainz/angel_song_rate_since1965.png" alt="Angel song rate since 1965 — MusicBrainz">
   </div>
   <details>
-    <summary>Show all charts</summary>
+    <summary>📊 Show all charts (click to expand)</summary>
     <div class="detail-charts">
       <div class="chart">
         <h3>All songs by year</h3>
@@ -68,7 +70,7 @@
     <img src="million-songs-database/angel_song_rate_since1965.png" alt="Angel song rate since 1965 — MSD">
   </div>
   <details>
-    <summary>Show all charts</summary>
+    <summary>📊 Show all charts (click to expand)</summary>
     <div class="detail-charts">
       <div class="chart">
         <h3>All songs by year</h3>
@@ -93,7 +95,7 @@
     <img src="kaggle-spotify/angel_song_rate_since1965.png" alt="Angel song rate since 1965 — Spotify">
   </div>
   <details>
-    <summary>Show all charts</summary>
+    <summary>📊 Show all charts (click to expand)</summary>
     <div class="detail-charts">
       <div class="chart">
         <h3>All songs by year</h3>
@@ -118,7 +120,7 @@
     <img src="kaggle-top-100/angel_song_rate_since1965.png" alt="Angel song rate since 1965 — Billboard">
   </div>
   <details>
-    <summary>Show all charts</summary>
+    <summary>📊 Show all charts (click to expand)</summary>
     <div class="detail-charts">
       <div class="chart">
         <h3>All #1 songs by year</h3>
