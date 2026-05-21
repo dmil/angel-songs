@@ -10,6 +10,12 @@
 # Allow top-level docs
 !README.md
 !results.html
+!package.json
+!package-lock.json
+
+# Allow docs/ for GitHub Pages
+!docs/
+!docs/index.html
 
 # Allow PNGs in each source folder
 !musicbrainz/*.png

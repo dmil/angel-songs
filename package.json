@@ -1,0 +1,27 @@
+{
+  "name": "angel-songs",
+  "version": "1.0.0",
+  "description": "An investigation into how often songs with \"Angel\" in the title have been released over time, across multiple music datasets.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmil/angel-songs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dmil/angel-songs/issues"
+  },
+  "homepage": "https://github.com/dmil/angel-songs#readme",
+  "devDependencies": {
+    "pagecrypt": "^7.1.0"
+  }
+}
