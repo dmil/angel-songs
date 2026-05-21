@@ -7,7 +7,8 @@
   <style>
     body { font-family: Georgia, serif; max-width: 960px; margin: 40px auto; padding: 0 24px; color: #222; background: #fafaf8; }
     h1 { font-size: 2rem; margin-bottom: 4px; }
-    .disclaimer { font-size: 0.85rem; color: #c0392b; border-left: 3px solid #e74c3c; padding-left: 12px; margin: 12px 0 16px; }
+    .disclaimer { font-size: 0.85rem; color: #666; border-left: 3px solid #ccc; padding-left: 12px; margin: 12px 0 16px; }
+    .disclaimer-warning { font-size: 0.85rem; color: #c0392b; border-left: 3px solid #e74c3c; background: #fff5f5; padding: 10px 12px; margin: 24px 0 0; border-radius: 0 4px 4px 0; }
     h2 { font-size: 1.4rem; margin-top: 56px; margin-bottom: 4px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
     .source-meta { font-size: 0.85rem; color: #666; margin-bottom: 20px; }
     .chart { margin-bottom: 8px; }
@@ -32,12 +33,7 @@
     Charts were produced by querying multiple music datasets for songs with "angel" (case-insensitive)
     in the title. Results reflect dataset biases and coverage gaps.
   </p>
-  <p class="disclaimer">
-    ⚠️ No code has been reviewed or verified. The analysis scripts may contain errors, the charts may be wrong,
-    and the conclusions may be misleading. Do not publish or use any of this without first reviewing and editing the underlying code and data.
-  </p>
-
-  <div style="background:#fff8e8; border-left: 4px solid #f0c040; padding: 16px 20px; margin-bottom: 48px; font-size: 0.95rem; line-height: 1.6;">
+  <div style="background:#fff8e8; border-left: 4px solid #f0c040; padding: 16px 20px; margin-bottom: 0; font-size: 0.95rem; line-height: 1.6;">
     <strong>Context &amp; next steps</strong><br><br>
     This is a first attempt at exploring whether there is an "angel bump" in popular music — a period where songs with "angel" in the title became more or less common over time. At this stage we are still getting a feel for what data is even available and what it looks like.<br><br>
     Before any of this is usable, the next steps would be:
@@ -48,6 +44,10 @@
       <li><strong>Only then do we have a chart worth using.</strong></li>
     </ol>
   </div>
+  <p class="disclaimer-warning">
+    ⚠️ No code has been reviewed or verified. The analysis scripts may contain errors, the charts may be wrong,
+    and the conclusions may be misleading. Do not publish or use any of this without first reviewing and editing the underlying code and data.
+  </p>
 
   <!-- MusicBrainz -->
   <h2>MusicBrainz</h2>
