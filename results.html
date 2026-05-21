@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Memo for Christine [UNEDITED - NOT FOR PUBLICATION]</title>
+  <script>
+    if (prompt('Password:') !== 'christine') {
+      document.documentElement.innerHTML = '<p style="font-family:sans-serif;padding:40px;color:#666;">Incorrect password.</p>';
+    }
+  </script>
   <style>
     body { font-family: Georgia, serif; max-width: 960px; margin: 40px auto; padding: 0 24px; color: #222; background: #fafaf8; }
     h1 { font-size: 2rem; margin-bottom: 4px; }
@@ -26,14 +31,6 @@
   </style>
 </head>
 <body>
-
-  <script>
-    if (prompt('Password:') !== 'christine') {
-      document.open();
-      document.write('<p style="font-family:sans-serif;padding:40px;color:#666;">Incorrect password.</p>');
-      document.close();
-    }
-  </script>
 
   <h1>Memo for Christine <span style="font-size:1rem;font-weight:normal;color:#888;">[UNEDITED - NOT FOR PUBLICATION]</span></h1>
   <p class="disclaimer">
