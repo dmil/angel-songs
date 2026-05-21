@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angel Songs — Results</title>
+  <style>
+    body { font-family: Georgia, serif; max-width: 960px; margin: 40px auto; padding: 0 24px; color: #222; background: #fafaf8; }
+    h1 { font-size: 2rem; margin-bottom: 4px; }
+    .disclaimer { font-size: 0.85rem; color: #666; border-left: 3px solid #ccc; padding-left: 12px; margin: 12px 0 40px; }
+    h2 { font-size: 1.4rem; margin-top: 56px; margin-bottom: 4px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+    .source-meta { font-size: 0.85rem; color: #666; margin-bottom: 20px; }
+    .chart { margin-bottom: 8px; }
+    .chart h3 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: #888; margin: 0 0 6px; }
+    .chart img { width: 100%; border: 1px solid #e0e0e0; border-radius: 4px; }
+    details { margin-top: 20px; }
+    summary { cursor: pointer; font-size: 0.9rem; color: #555; padding: 8px 12px; background: #f0ede8; border-radius: 4px; list-style: none; display: flex; align-items: center; gap: 6px; }
+    summary::-webkit-details-marker { display: none; }
+    summary::before { content: "▶"; font-size: 0.7rem; transition: transform 0.2s; }
+    details[open] summary::before { transform: rotate(90deg); }
+    .detail-charts { display: grid; grid-template-columns: 1fr; gap: 20px; margin-top: 16px; }
+    hr { border: none; border-top: 1px solid #e0e0e0; margin: 56px 0 0; }
+  </style>
+</head>
+<body>
+
+  <h1>Angel Songs</h1>
+  <p class="disclaimer">
+    🤖 This is an AI-generated summary of exploratory data analysis conducted with Claude.
+    Charts were produced by querying multiple music datasets for songs with "angel" (case-insensitive)
+    in the title. Results reflect dataset biases and coverage gaps.
+  </p>
+
+  <!-- MusicBrainz -->
+  <h2>MusicBrainz</h2>
+  <p class="source-meta">Open music encyclopedia · Full export May 2026 · 38.9M recordings, 5.5M releases</p>
+  <div class="chart">
+    <h3>Angel songs as % of all songs (since 1965)</h3>
+    <img src="musicbrainz/angel_song_rate_since1965.png" alt="Angel song rate since 1965 — MusicBrainz">
+  </div>
+  <details>
+    <summary>Show all charts</summary>
+    <div class="detail-charts">
+      <div class="chart">
+        <h3>All songs by year</h3>
+        <img src="musicbrainz/songs_by_year.png" alt="All songs by year — MusicBrainz">
+      </div>
+      <div class="chart">
+        <h3>Songs with "Angel" in the title</h3>
+        <img src="musicbrainz/angel_songs_by_year.png" alt="Angel songs by year — MusicBrainz">
+      </div>
+      <div class="chart">
+        <h3>Angel songs as % of all songs (full range)</h3>
+        <img src="musicbrainz/angel_song_rate.png" alt="Angel song rate — MusicBrainz">
+      </div>
+    </div>
+  </details>
+
+  <!-- Million Song Dataset -->
+  <h2>Million Song Dataset</h2>
+  <p class="source-meta">1M contemporary popular tracks · millionsongdataset.com · ~515K tracks with year data</p>
+  <div class="chart">
+    <h3>Angel songs as % of all songs (since 1965)</h3>
+    <img src="million-songs-database/angel_song_rate_since1965.png" alt="Angel song rate since 1965 — MSD">
+  </div>
+  <details>
+    <summary>Show all charts</summary>
+    <div class="detail-charts">
+      <div class="chart">
+        <h3>All songs by year</h3>
+        <img src="million-songs-database/all_songs_by_year.png" alt="All songs by year — MSD">
+      </div>
+      <div class="chart">
+        <h3>Songs with "Angel" in the title</h3>
+        <img src="million-songs-database/angel_songs_by_year.png" alt="Angel songs by year — MSD">
+      </div>
+      <div class="chart">
+        <h3>Angel songs as % of all songs (full range)</h3>
+        <img src="million-songs-database/angel_song_rate.png" alt="Angel song rate — MSD">
+      </div>
+    </div>
+  </details>
+
+  <!-- Kaggle Spotify -->
+  <h2>Kaggle Spotify Music Info</h2>
+  <p class="source-meta">Spotify audio features dataset · kaggle.com · track names, years, and audio features</p>
+  <div class="chart">
+    <h3>Angel songs as % of all songs (since 1965)</h3>
+    <img src="kaggle-spotify/angel_song_rate_since1965.png" alt="Angel song rate since 1965 — Spotify">
+  </div>
+  <details>
+    <summary>Show all charts</summary>
+    <div class="detail-charts">
+      <div class="chart">
+        <h3>All songs by year</h3>
+        <img src="kaggle-spotify/all_songs_by_year.png" alt="All songs by year — Spotify">
+      </div>
+      <div class="chart">
+        <h3>Songs with "Angel" in the title</h3>
+        <img src="kaggle-spotify/angel_songs_by_year.png" alt="Angel songs by year — Spotify">
+      </div>
+      <div class="chart">
+        <h3>Angel songs as % of all songs (full range)</h3>
+        <img src="kaggle-spotify/angel_song_rate.png" alt="Angel song rate — Spotify">
+      </div>
+    </div>
+  </details>
+
+  <!-- Kaggle Billboard #1 Hits -->
+  <h2>Kaggle Billboard #1 Hits</h2>
+  <p class="source-meta">Billboard chart-toppers scraped via Genius · ~6,500 songs · 1958–present</p>
+  <div class="chart">
+    <h3>Angel #1 songs as % of all #1 songs (since 1965)</h3>
+    <img src="kaggle-top-100/angel_song_rate_since1965.png" alt="Angel song rate since 1965 — Billboard">
+  </div>
+  <details>
+    <summary>Show all charts</summary>
+    <div class="detail-charts">
+      <div class="chart">
+        <h3>All #1 songs by year</h3>
+        <img src="kaggle-top-100/all_songs_by_year.png" alt="All songs by year — Billboard">
+      </div>
+      <div class="chart">
+        <h3>#1 songs with "Angel" in the title</h3>
+        <img src="kaggle-top-100/angel_songs_by_year.png" alt="Angel songs by year — Billboard">
+      </div>
+      <div class="chart">
+        <h3>Angel #1 songs as % of all #1 songs (full range)</h3>
+        <img src="kaggle-top-100/angel_song_rate.png" alt="Angel song rate — Billboard">
+      </div>
+    </div>
+  </details>
+
+  <hr>
+
+</body>
+</html>

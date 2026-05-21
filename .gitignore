@@ -1,0 +1,18 @@
+# Ignore everything
+*
+
+# Allow gitignore itself
+!.gitignore
+
+# Allow directories to be traversed
+!*/
+
+# Allow top-level docs
+!README.md
+!results.html
+
+# Allow PNGs in each source folder
+!musicbrainz/*.png
+!million-songs-database/*.png
+!kaggle-spotify/*.png
+!kaggle-top-100/*.png
