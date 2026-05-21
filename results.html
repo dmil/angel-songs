@@ -28,17 +28,9 @@
 <body>
 
   <script>
-    (function() {
-      var pw = localStorage.getItem('angel-songs-auth');
-      if (pw !== 'christine') {
-        var input = prompt('Password:');
-        if (input !== 'christine') {
-          document.body.innerHTML = '<p style="font-family:sans-serif;padding:40px;color:#666;">Incorrect password.</p>';
-          return;
-        }
-        localStorage.setItem('angel-songs-auth', 'christine');
-      }
-    })();
+    if (prompt('Password:') !== 'christine') {
+      document.body.innerHTML = '<p style="font-family:sans-serif;padding:40px;color:#666;">Incorrect password.</p>';
+    }
   </script>
 
   <h1>Memo for Christine <span style="font-size:1rem;font-weight:normal;color:#888;">[UNEDITED - NOT FOR PUBLICATION]</span></h1>
