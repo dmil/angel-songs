@@ -16,6 +16,10 @@
 # Allow docs/ for GitHub Pages
 !docs/
 !docs/index.html
+!docs/musicbrainz/*.png
+!docs/million-songs-database/*.png
+!docs/kaggle-spotify/*.png
+!docs/kaggle-top-100/*.png
 
 # Allow PNGs in each source folder
 !musicbrainz/*.png
