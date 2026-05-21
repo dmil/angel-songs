@@ -29,7 +29,9 @@
 
   <script>
     if (prompt('Password:') !== 'christine') {
-      document.body.innerHTML = '<p style="font-family:sans-serif;padding:40px;color:#666;">Incorrect password.</p>';
+      document.open();
+      document.write('<p style="font-family:sans-serif;padding:40px;color:#666;">Incorrect password.</p>');
+      document.close();
     }
   </script>
 
